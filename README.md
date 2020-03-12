@@ -1,4 +1,4 @@
-# Проект «Smart Device» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Проект «Smart Device»
 
 * Разработчик: [Сергей Анисичкин](https://up.htmlacademy.ru/adaptive/17/user/565323).
 

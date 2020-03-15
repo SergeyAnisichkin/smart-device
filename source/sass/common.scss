@@ -67,9 +67,14 @@ body {
   max-width: 1410px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
+  // background-color: coral; 
 }
 
+.column {
+  flex-direction: column;
+  position: relative;
+}
 // .container-small {
 //   max-width: 1170px;
 //   margin: 0 auto;

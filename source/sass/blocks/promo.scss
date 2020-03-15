@@ -1,13 +1,12 @@
 .promo {
-  margin: 0 auto;
-  min-height: 875px;
-  position: relative;
-  background: #1b2d37 url("/img/background.png") no-repeat center top;
+  margin: -85px auto;
+  min-height: 878px;
+  background: #1b2d37 url("/img/Start.png") no-repeat center top;
 }
 
 .promo__title {
   margin-bottom: 30px;
-  margin-top: 225px;
+  margin-top: 310px;
   font-family: "Roboto Condensed", "Times New Roman", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -30,12 +29,6 @@
   background-repeat: no-repeat;
 }
 
-.promo__img {
-  position: absolute;
-  top: 195px;
-  left: 775px;
-}
-
 .promo__feedback {
   margin-top: 50px;
   margin-left: 110px;
@@ -47,9 +40,12 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.05em;
+  padding-top: 16px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+.promo__feedback span {
+  font-size: 0px;
 }
 
 .promo__scroll {
@@ -57,7 +53,7 @@
   width: 93px;
   height: 16px;
   left: -25px;
-  top: 640px;
+  top: 725px;
 
   font-size: 14px;
   line-height: 16px;
@@ -67,20 +63,73 @@
   transform: rotate(-90deg);
 }
 
+@media (max-width: $tablet-width){
+  .promo {
+    padding-left: 130px;
+    min-height: 686px;
+    background: #1b2d37 url("/img/StartTab.png") no-repeat center top;
+  }
 
+  .promo__title {
+    margin-top: 185px;
+    max-width: 470px;
+    font-size: 60px;
+    line-height: 70px;
+  }
 
-// @media (max-width: $tablet-width)
-// @media (max-width: $mobile-width) 
-// .header {
-  //   min-height: 647px;
-  //   width: 320px;
-  //   font-size: 0px;
-  //   background: #1b2d37 url("/img/background mob.png") no-repeat center top;
-  // }
-  // .header {
-  //   min-height: 647px;
-  //   width: 320px;
-  //   font-size: 0px;
-  //   background: #1b2d37 url("/img/background mob.png") no-repeat center top;
-  // }
+  .promo__description {
+    max-width: 390px;
+    margin: 0;
+    padding-left: 50px;
+    font-size: 18px;
+    background-size: 33px 2px;
+  }  
+
+  .promo__feedback {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 380px;
+  }
+}
+
+@media (max-width: $mobile-width){ 
+  .promo {
+    padding-left: 0px;
+    min-height: 647px;
+    width: 320px;
+    background: #1b2d37 url("/img/StartMob.png") no-repeat center top;
+  }
+
+  .promo__title {
+    margin-top: 285px;
+    max-width: 470px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+  
+  .promo__description {
+    max-width: 245px;
+    margin: 0;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 156.8%;
+    background-position: left 20%;
+
+  } 
+  
+  .promo__feedback {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 287px;
+    font-size: 0px;
+  }
+
+  .promo__feedback span {
+    font-size: 16px;
+  }
+
+  .promo__scroll {
+    font-size: 0px;
+  }
+} 
  

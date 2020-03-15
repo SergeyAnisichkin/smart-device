@@ -1,12 +1,67 @@
-.div {
+.advantages__list {
+  margin: 0;
+  margin-top: 115px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
 
+.advantages_item {
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding:60px 45px 20px;
+  width: 570px;
+  min-height: 300px;
+  border: 1px solid #EBEBEB;
+  border-left: 3px solid #00B2FF;
+}
+
+.advantages_item:hover {
+  color: #ffffff;
+  background-color: #00B2FF ;
+}
+
+.advantages__title:hover {
+  color: #ffffff;
+}
+
+.advantages__item--fast {
+  background-image: url("/img/stopwatch.svg");
+  background-position: 9% 10%;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--large {
+  background-image: url("/img/hired.svg");
+  background-position: 9% 10%;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--confidencial {
+  background-image: url("/img/detective.svg");
+  background-position: 9% 10%;
+  background-repeat: no-repeat;
+}
+
+.advantages__item--price {
+  background-image: url("/img/tag.svg");
+  background-position: 9% 10%;
+  background-repeat: no-repeat;
+}
+
+.advantages__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: #00B2FF;
 }
 
 
-@media (max-width: $tablet-width) {
-
-}
-
-@media (max-width: $mobile-width) {
-
-}
+// .div {
+// }
+// @media (max-width: $tablet-width) {}
+// @media (max-width: $mobile-width) {}

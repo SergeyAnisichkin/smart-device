@@ -1,12 +1,46 @@
-.div {
+.about {
+  padding-top: 80px;
+  min-height: 490px;
+  padding-left: 175px;
+  background-image: url("/img/image 2005.png");
+  background-position: -35px 120px;
+  background-repeat: no-repeat;
+}
 
+.about__title {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.about__detail {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 14px 12px 14px ;
+  width: 180px;
+  background-color: #FFFFFF;
+  border-color :#00B2FF;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00B2FF;
+  border: 1px solid  #00B2FF;
+  border-radius: 5px;
 }
 
 
-@media (max-width: $tablet-width) {
 
-}
-
-@media (max-width: $mobile-width) {
-
-}
+// .div {
+// }
+// @media (max-width: $tablet-width) {
+// }
+// @media (max-width: $mobile-width) {
+// }

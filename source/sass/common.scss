@@ -1,24 +1,42 @@
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-  font-weight: 300;
+  font-family: "PT Mono";
+  src: url("../fonts/ptmono.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
+  font-family: "PT Mono";
+  src: url("../fonts/ptmonobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Bold.woff") format("woff");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -27,38 +45,57 @@ html {
 }
 
 body {
-  position: relative;
+  // position: relative;
   margin: 0;
   padding: 0;
-  min-width: 320px;
-
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
-  color: #000000;
-
-  background-color: #ffffff;
+  color: #666666;
 }
 
-img {
-  max-width: 100%;
+// min-width: 320px;
+// font-family: "OpenSans", "Arial", sans-serif;
+// font-size: 14px;
+// line-height: 24px;
+// font-weight: 400;
+// color: #000000;
+// background-color: #ffffff;
+
+.container-wide {
+  max-width: 1410px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
+
+.container-small {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+
+// img {
+
+// }
 
 a {
   text-decoration: none;
 }
 
 .button {
-  display: inline-block;
   box-sizing: border-box;
   height: 55px;
   text-align: center;
-  padding: 10px;
-  font-size: 18px;
+  font-family: "Roboto Condensed", "Times New Roman", sans-serif;
+  font-style: normal;
   font-weight: bold;
-  border-radius: 27px;
-  border: solid 3px #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -77,19 +114,7 @@ a {
   overflow: hidden;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1200px;
-  }
-}
+// @media (min-width: $desktop-width) {
+// }
+// @media (min-width: $desktop-width) {
+// }

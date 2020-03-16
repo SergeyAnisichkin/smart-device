@@ -1,12 +1,14 @@
 .about {
-  padding-top: 80px;
-  min-height: 490px;
-  padding-left: 175px;
+  margin: 0 auto;
+  
+  position: relative;
+}
+.about__description {
+  padding: 0 10px 0 175px;
   background-image: url("/img/image_2005.png");
-  background-position: -35px 120px;
+  background-position: -35px 30px;
   background-repeat: no-repeat;
 }
-
 .about__title {
   font-family: Roboto Condensed;
   font-style: normal;
@@ -18,29 +20,28 @@
 
 .about__detail {
   margin-top: 30px;
-  display: inline-block;
-  padding: 14px 12px 14px ;
+  display: block;
+  padding: 18px 16px;
   width: 180px;
   background-color: #FFFFFF;
   border-color :#00B2FF;
-  font-family: Roboto Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-align: center;
   color: #00B2FF;
-  border: 1px solid  #00B2FF;
-  border-radius: 5px;
 }
 
+@media (max-width: $tablet-width){
+  .about__text-size {
 
-
-// .div {
-// }
-// @media (max-width: $tablet-width) {
-// }
-// @media (max-width: $mobile-width) {
-// }
+    // overflow: hidden; /* Обрезаем содержимое */
+    // padding: 5px; /* Поля */
+    // text-overflow: ellipsis; /* Многоточие */
+   }
+  }
+  @media (max-width: $mobile-width){ 
+    .about__text{
+      margin-bottom: 40px;
+    }
+    .about__description {
+      background-size: 0px;
+      padding: 0;
+    }
+}

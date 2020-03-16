@@ -1,5 +1,5 @@
 .promo {
-  margin: -85px auto;
+  margin: -85px auto 0 auto;
   min-height: 878px;
   background: #1b2d37 url("/img/Start.png") no-repeat center top;
 }
@@ -24,7 +24,7 @@
   font-size: 22px;
   line-height: 34px;
   color: #FFFFFF;
-  background-image: url("/img/Rectangle 4.svg");
+  background-image: url("/img/rectangle.svg");
   background-position: left 25%;
   background-repeat: no-repeat;
 }
@@ -90,6 +90,7 @@
     margin-left: 50px;
     width: 380px;
   }
+  
 }
 
 @media (max-width: $mobile-width){ 

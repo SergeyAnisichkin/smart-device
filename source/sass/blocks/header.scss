@@ -71,16 +71,24 @@
 @media (max-width: $tablet-width) {
   .header__contacts {
     justify-content: flex-end;
-    min-width: 85px;
+    min-width: 55px;
     font-size: 0px;
     margin-bottom: 30px;
   }
 
-  .header__email,
-  .header__phone {
+  .header__email {
+    display: block;
+    background-size: 24px;
+    margin-right: 5px;
     background-position: right center;
   }
-  
+
+  .header__phone {
+    display: block;
+    background-size: 25px;
+    margin-right: 5px;
+    background-position: right center;
+  }
   .header__callback {
     display: none;
   }
@@ -89,6 +97,7 @@
 @media (max-width: $mobile-width) {
   .header__contacts {
     margin-bottom: 40px;
+    width: 100px;
   }
   .header__logo {
     min-width: 40px;
@@ -99,15 +108,18 @@
     font-size: 0px;
   }
   .header__email {
-    background-size: 80%;
+    display: block;
+    background-size: 25px;
+    margin-right: 5px;
     
   }
  
   .header__phone {
-    background-size: 70%;
+    display: block;
+    background-size: 22px;
   }
 
-  .header img {
+  .header__logo img {
     width: 38px;
     height: 38px;
   }

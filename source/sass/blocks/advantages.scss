@@ -17,8 +17,8 @@
 .advantages_item {
   box-sizing: border-box;
   margin-bottom: 30px;
-  padding: 65px 0px 0px 45px;
-  max-width: 570px;
+  padding: 65px 25px 12px 45px;
+  width: 48.7%;
   min-height: 300px;
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
@@ -68,15 +68,17 @@
 
 @media (max-width: $tablet-width){
   .advantages {
-    min-height: 660px;
+    height: auto;
   }
+
   .advantages__list {
     margin: 0;
     margin-top: 55px;
   }  
+
   .advantages_item {
-    max-width: 345px;
-     
+    width: 48%;
+    padding: 65px 21px 12px 27px;   
   }
   .advantages__item--fast,
   .advantages__item--large,
@@ -95,7 +97,7 @@
     margin-top: 35px;
   }  
   .advantages_item {
-    max-width: 290px;
+    width: 100%;
     margin-bottom: 20px;
   }
 
